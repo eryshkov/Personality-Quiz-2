@@ -14,6 +14,7 @@
 		5C0C5A1721419CF000B7933D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C5A1521419CF000B7933D /* LaunchScreen.storyboard */; };
 		5C0C5A1F2141A52B00B7933D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C5A1E2141A52B00B7933D /* QuestionViewController.swift */; };
 		5C0C5A212141A53E00B7933D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C5A202141A53E00B7933D /* ResultsViewController.swift */; };
+		5C8BA62A2146DEB6002E06DD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BA6292146DEB6002E06DD /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5C0C5A1821419CF000B7933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0C5A1E2141A52B00B7933D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		5C0C5A202141A53E00B7933D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		5C8BA6292146DEB6002E06DD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				5C0C5A0C21419CEF00B7933D /* AppDelegate.swift */,
+				5C8BA6292146DEB6002E06DD /* Question.swift */,
 				5C0C5A0E21419CEF00B7933D /* IntroductionViewController.swift */,
 				5C0C5A1E2141A52B00B7933D /* QuestionViewController.swift */,
 				5C0C5A202141A53E00B7933D /* ResultsViewController.swift */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8BA62A2146DEB6002E06DD /* Question.swift in Sources */,
 				5C0C5A0F21419CEF00B7933D /* IntroductionViewController.swift in Sources */,
 				5C0C5A0D21419CEF00B7933D /* AppDelegate.swift in Sources */,
 				5C0C5A1F2141A52B00B7933D /* QuestionViewController.swift in Sources */,
