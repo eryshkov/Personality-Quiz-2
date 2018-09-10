@@ -319,7 +319,11 @@
                         <viewLayoutGuide key="safeArea" id="Xue-hs-Sfe"/>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="Rau-OE-aCP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="H8P-CO-zOn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="H8P-CO-zOn">
+                            <connections>
+                                <segue destination="WR0-gG-79o" kind="unwind" unwindAction="unwindToIntro:" id="DoL-Mm-1cB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="resultAnimal" destination="1G2-kt-G8t" id="QHH-Cr-GJQ"/>
@@ -327,6 +331,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFp-I4-h7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WR0-gG-79o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2700" y="134"/>
         </scene>
