@@ -109,11 +109,11 @@
                                         <rect key="frame" x="0.0" y="50" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-Ha-w1C">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS9-qI-o7Z">
                                         <rect key="frame" x="0.0" y="100" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS9-qI-o7Z">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-Ha-w1C">
                                         <rect key="frame" x="0.0" y="150" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
@@ -213,9 +213,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VHR-hb-y48">
+                                <rect key="frame" x="16" y="458" width="288" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="VHR-hb-y48" firstAttribute="leading" secondItem="0vQ-qU-G5D" secondAttribute="leading" constant="16" id="65n-BV-c7P"/>
+                            <constraint firstAttribute="trailing" secondItem="VHR-hb-y48" secondAttribute="trailing" constant="16" id="7KF-dl-VSL"/>
                             <constraint firstItem="Q4B-dU-eFN" firstAttribute="centerY" secondItem="0vQ-qU-G5D" secondAttribute="centerY" id="95j-sh-Zv8"/>
                             <constraint firstItem="4bR-iD-evO" firstAttribute="trailing" secondItem="Acq-zt-Fke" secondAttribute="trailing" constant="16" id="BmZ-tx-G7N"/>
                             <constraint firstItem="Q4B-dU-eFN" firstAttribute="leading" secondItem="4bR-iD-evO" secondAttribute="leading" constant="16" id="DM0-V1-gvr"/>
@@ -223,6 +228,7 @@
                             <constraint firstItem="4bR-iD-evO" firstAttribute="trailing" secondItem="Ema-Zm-jhA" secondAttribute="trailing" constant="16" id="LwJ-uk-O24"/>
                             <constraint firstItem="4bR-iD-evO" firstAttribute="trailing" secondItem="7wB-xy-QOf" secondAttribute="trailing" constant="16" id="Vv5-Gl-IeL"/>
                             <constraint firstItem="Ema-Zm-jhA" firstAttribute="top" secondItem="Acq-zt-Fke" secondAttribute="bottom" constant="10" id="W2s-b7-4qU"/>
+                            <constraint firstItem="4bR-iD-evO" firstAttribute="bottom" secondItem="VHR-hb-y48" secondAttribute="bottom" constant="20" id="adl-Yw-43W"/>
                             <constraint firstItem="Acq-zt-Fke" firstAttribute="top" secondItem="4bR-iD-evO" secondAttribute="top" constant="10" id="bn2-yN-b0G"/>
                             <constraint firstItem="Acq-zt-Fke" firstAttribute="leading" secondItem="4bR-iD-evO" secondAttribute="leading" constant="16" id="fbf-rk-l8H"/>
                             <constraint firstItem="Ema-Zm-jhA" firstAttribute="leading" secondItem="4bR-iD-evO" secondAttribute="leading" constant="16" id="gKU-GP-1ZG"/>
@@ -233,8 +239,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="3CD-4J-HHO"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="2BI-lQ-LVx" id="1EH-JI-9Hh"/>
+                        <outlet property="multiLabel2" destination="V6T-GA-kkF" id="Gym-Dz-6kU"/>
+                        <outlet property="multiLabel3" destination="snl-Et-wAg" id="WWd-zD-ht9"/>
+                        <outlet property="multiLabel4" destination="qlx-i2-ZKN" id="A0V-L2-nky"/>
                         <outlet property="multipleStackView" destination="Ema-Zm-jhA" id="2ky-jQ-TdK"/>
+                        <outlet property="questionLabel" destination="Acq-zt-Fke" id="34b-pl-OI6"/>
+                        <outlet property="questionProgress" destination="VHR-hb-y48" id="XBb-si-feV"/>
+                        <outlet property="rangedLabel1" destination="0wb-xS-xrw" id="tq8-Op-CUV"/>
+                        <outlet property="rangedLabel2" destination="EkU-8N-hFN" id="lMa-Ai-6in"/>
                         <outlet property="rangedStackView" destination="Q4B-dU-eFN" id="3r2-DG-QR4"/>
+                        <outlet property="singleButton1" destination="fdJ-qi-V2N" id="jJk-AM-vOk"/>
+                        <outlet property="singleButton2" destination="TqQ-Pa-SLR" id="SBf-X1-y0a"/>
+                        <outlet property="singleButton3" destination="rS9-qI-o7Z" id="8K7-du-AMo"/>
+                        <outlet property="singleButton4" destination="sc3-Ha-w1C" id="1HW-F8-njI"/>
                         <outlet property="singleStackView" destination="7wB-xy-QOf" id="Bmj-ap-8qH"/>
                         <segue destination="4BJ-Mu-PSb" kind="show" identifier="ResultsSegue" id="c0L-UA-A2h"/>
                     </connections>
