@@ -76,6 +76,8 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
 
         updateUI()
+        
+       
     }
 
     func updateUI() {
@@ -187,6 +189,7 @@ class QuestionViewController: UIViewController {
         if segue.identifier == "ResultsSegue" {
             let resultsViewController = segue.destination as! ResultsViewController
             resultsViewController.responses = answersChosen
+            resultsViewController.navigationItem.hidesBackButton = true
         }
     }
 }
