@@ -112,6 +112,10 @@ class QuestionViewController: UIViewController {
     
     func updateMultipleStack(using answers: [Answer]) {
         multipleStackView.isHidden = false
+        multiSwitch1.isOn = false
+        multiSwitch2.isOn = false
+        multiSwitch3.isOn = false
+        multiSwitch4.isOn = false
         multiLabel1.text = answers[0].text
         multiLabel2.text = answers[1].text
         multiLabel3.text = answers[2].text
@@ -120,6 +124,7 @@ class QuestionViewController: UIViewController {
     
     func updateRangedStack(using answers: [Answer]) {
         rangedStackView.isHidden = false
+        rangedSlider.setValue(0.5, animated: true)
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
@@ -165,10 +170,24 @@ class QuestionViewController: UIViewController {
         let currentAnswers = questions[questionIndex].answers
         let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
         answersChosen.append(currentAnswers[index])
+        nextQuestion()
     }
     
     func nextQuestion() {
-        //TODO: implement func
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        }else{
+            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answersChosen
+        }
     }
 }
 

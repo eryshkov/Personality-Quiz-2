@@ -111,14 +111,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-Pa-SLR">
                                         <rect key="frame" x="0.0" y="50" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pT7-b1-ITS" eventType="touchUpInside" id="4DD-Pw-V2V"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS9-qI-o7Z">
                                         <rect key="frame" x="0.0" y="100" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pT7-b1-ITS" eventType="touchUpInside" id="RBX-2N-eic"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-Ha-w1C">
                                         <rect key="frame" x="0.0" y="150" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="pT7-b1-ITS" eventType="touchUpInside" id="iEl-E5-1kP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -312,6 +321,10 @@
                     <navigationItem key="navigationItem" title="Результат" id="Rau-OE-aCP">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="H8P-CO-zOn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnimal" destination="1G2-kt-G8t" id="QHH-Cr-GJQ"/>
+                        <outlet property="resultDescription" destination="2Ae-Kj-39z" id="75T-wD-F6w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFp-I4-h7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
