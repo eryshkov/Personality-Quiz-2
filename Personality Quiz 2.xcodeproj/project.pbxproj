@@ -15,6 +15,11 @@
 		5C0C5A1F2141A52B00B7933D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C5A1E2141A52B00B7933D /* QuestionViewController.swift */; };
 		5C0C5A212141A53E00B7933D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C5A202141A53E00B7933D /* ResultsViewController.swift */; };
 		5C8BA62A2146DEB6002E06DD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BA6292146DEB6002E06DD /* Question.swift */; };
+		5CEA704D21B19C35002DE87E /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA704821B19C35002DE87E /* 1.jpeg */; };
+		5CEA704E21B19C35002DE87E /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA704921B19C35002DE87E /* 2.jpeg */; };
+		5CEA704F21B19C35002DE87E /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA704A21B19C35002DE87E /* 3.jpeg */; };
+		5CEA705021B19C35002DE87E /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA704B21B19C35002DE87E /* 5.jpeg */; };
+		5CEA705121B19C35002DE87E /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA704C21B19C35002DE87E /* 4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		5C0C5A1E2141A52B00B7933D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		5C0C5A202141A53E00B7933D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		5C8BA6292146DEB6002E06DD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5CEA704821B19C35002DE87E /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		5CEA704921B19C35002DE87E /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		5CEA704A21B19C35002DE87E /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		5CEA704B21B19C35002DE87E /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		5CEA704C21B19C35002DE87E /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,7 @@
 		5C0C5A0021419CEF00B7933D = {
 			isa = PBXGroup;
 			children = (
+				5CEA703D21B19B58002DE87E /* screens */,
 				5C0C5A0B21419CEF00B7933D /* Personality Quiz 2 */,
 				5C0C5A0A21419CEF00B7933D /* Products */,
 			);
@@ -71,6 +82,18 @@
 				5C0C5A1821419CF000B7933D /* Info.plist */,
 			);
 			path = "Personality Quiz 2";
+			sourceTree = "<group>";
+		};
+		5CEA703D21B19B58002DE87E /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA704821B19C35002DE87E /* 1.jpeg */,
+				5CEA704921B19C35002DE87E /* 2.jpeg */,
+				5CEA704A21B19C35002DE87E /* 3.jpeg */,
+				5CEA704C21B19C35002DE87E /* 4.jpeg */,
+				5CEA704B21B19C35002DE87E /* 5.jpeg */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +128,7 @@
 				TargetAttributes = {
 					5C0C5A0821419CEF00B7933D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -131,9 +155,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEA704E21B19C35002DE87E /* 2.jpeg in Resources */,
 				5C0C5A1721419CF000B7933D /* LaunchScreen.storyboard in Resources */,
 				5C0C5A1421419CF000B7933D /* Assets.xcassets in Resources */,
+				5CEA705021B19C35002DE87E /* 5.jpeg in Resources */,
+				5CEA704F21B19C35002DE87E /* 3.jpeg in Resources */,
 				5C0C5A1221419CEF00B7933D /* Main.storyboard in Resources */,
+				5CEA705121B19C35002DE87E /* 4.jpeg in Resources */,
+				5CEA704D21B19C35002DE87E /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,17 +322,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = L2PMLV77L3;
+				DEVELOPMENT_TEAM = Z256VMH9HM;
 				INFOPLIST_FILE = "Personality Quiz 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.starapplic7.first1.Personality-Quiz-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dum22ns90.com1004.Personality-Quiz-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fec117fc-2f2e-4cf2-adc5-1f59288062cd";
-				PROVISIONING_PROFILE_SPECIFIER = 8b1759d59c557b10982ce1246caf2d5a38c6a6c1;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = 2in1;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,17 +342,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = L2PMLV77L3;
+				DEVELOPMENT_TEAM = Z256VMH9HM;
 				INFOPLIST_FILE = "Personality Quiz 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.starapplic7.first1.Personality-Quiz-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dum22ns90.com1004.Personality-Quiz-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fec117fc-2f2e-4cf2-adc5-1f59288062cd";
-				PROVISIONING_PROFILE_SPECIFIER = 8b1759d59c557b10982ce1246caf2d5a38c6a6c1;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = 2in1;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
