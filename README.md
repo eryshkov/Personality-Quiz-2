@@ -7,4 +7,4 @@ What animal are you?
 
 ## Main functionality
 * simple Quiz
-* four question types
+* three question types
